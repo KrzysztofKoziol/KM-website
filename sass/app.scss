@@ -1,0 +1,97 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+font-family: 'Raleway', sans-serif;
+}
+
+.about-me {
+  margin: 20px;
+  .avatar {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("../images/photo.jpg");
+    height: 400px;
+    width: 100%;
+
+  }
+}
+
+#headingOne button, #headingTwo button, #headingThree button, #headingFour button {
+  color:white;
+}
+
+#email {
+  word-wrap: break-word;
+}
+
+
+.main-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 5px;
+
+}
+
+.basicContactInfo ul{
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  height: 10px;
+
+  li { margin: 0 10px;
+    a {
+      color: black;
+      &:link {
+        text-decoration: none;
+      }
+      &:visited {
+        text-decoration: none;
+      }
+      &:hover {
+        text-decoration: underline;
+      }
+      &:active {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.navBar {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+  text-transform: uppercase;
+  .logo {
+    height: 20px;
+    width: 160px;
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+
+    p {
+      height: 20px;
+      width: 160px;
+    }
+  }
+  .menu {
+    height: 20px;
+    width: 260px;
+    ul {
+      list-style-type: none;
+      display: flex;
+      flex-direction: row;
+      li {
+        margin: 0 10px;
+
+      }
+    }
+  }
+}
