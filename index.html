@@ -5,23 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
     <link rel="stylesheet" href="style.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
     <title>Agnieszka Kozioł | Coaching | Doradzctwo zawodowe | Rozwój osobisty | Szkolenia</title>
 </head>
 <body>
     <header>
-        <!--<nav class="container">-->
-            <!--<div class="basicContactInfo">-->
-                <!--<ul>-->
-                    <!--<li>-->
-                        <!--<a href="mailto:agnieszka.m.koziol@gmail.com">agnieszka.m.koziol@gmail.com</a>-->
-                    <!--</li>-->
-                    <!--<li>-->
-                        <!--<p>tel.: 606-34-18-99</p>-->
-                    <!--</li>-->
-                <!--</ul>-->
-
-            <!--</div>-->
-        <!--</nav>-->
         <nav class="container">
             <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
                 <a class="navbar-brand" href="#">Agnieszka Kozioł</a>
@@ -31,21 +19,21 @@
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">O mnie <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="#infoAboutMe">O mnie <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Oferta</a>
+                            <a class="nav-link" href="#offer">Oferta</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Kontakt</a>
+                            <a class="nav-link" href="#contact">Kontakt</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <section class="container-fluid">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <section class="container ">
+        <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -55,7 +43,7 @@
                 <div class="carousel-item active">
                     <img class="d-block w-100" src="images/adult-blur-brainstorming-401684.jpg" alt="First slide">
                     <div class="carousel-caption d-none d-md-block">
-                        <h1>Agnieszka Kozioł</h1>
+                        <h1><strong>Agnieszka Kozioł</strong></h1>
                         <h2>Coaching</h2>
                         <h2>Doradztwo zawodowe</h2>
                     </div>
@@ -63,13 +51,16 @@
                 <div class="carousel-item">
                     <img class="d-block w-100" src="images/adult-beard-blur-551657.jpg" alt="Second slide">
                     <div class="carousel-caption d-none d-md-block">
-                        <h2>Oferta</h2>
+                        <h3><i>Ludzie z celami odnoszą sukcesy</i></h3>
+                        <h3><i>ponieważ wiedzą dokąd zmierzają.</i></h3>
+                        <h3><i>to jest aż tak proste.</i></h3>
+                        <h5>Earl Nightingale</h5>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img class="d-block w-100" src="images/adult-agreement-beard-429247.jpg" alt="Third slide">
                     <div class="carousel-caption d-none d-md-block">
-                        <h2>Kontakt</h2>
+                        <h2></h2>
                     </div>
                 </div>
             </div>
@@ -83,6 +74,7 @@
             </a>
         </div>
     </section>
+    <div id="infoAboutMe"></div>
     <section class="container about-me">
         <div class="row">
             <div class="col-12 col-md-6">
@@ -91,10 +83,12 @@
                     Cupcake caramels chocolate bar sweet muffin dessert bonbon cheesecake. Chupa chups bonbon caramels chupa chups. Pie caramels apple pie. Jujubes biscuit topping I love dragée dessert bonbon marshmallow. Macaroon cake pudding. Chocolate I love I love I love gummi bears cookie candy canes cookie tootsie roll. Powder jelly dragée powder I love chocolate candy canes chocolate cake jelly. Gingerbread soufflé topping powder cupcake. Icing sweet roll pastry sugar plum. Wafer gingerbread ice cream.
                 </p>
             </div>
-            <div class="col-12 col-md-6 avatar">
+            <div class="col-12 col-md-6 ">
+                <div class="avatar"/>
             </div>
         </div>
     </section>
+    <div id="offer"></div>
     <section class="container">
         <div class="accordion bg-dark" id="accordionExample">
             <div class="card">
@@ -156,46 +150,78 @@
             </div>
         </div>
     </section>
-    <section class="container">
+    <div id="contact"></div>
+    <section class="container" id="contactSection">
         <h2>Kontakt</h2>
         <hr/>
         <div class="row">
-
             <div class="col-12 col-md-4">
-                <h3>Agnieszka Kozioł</h3>
-                <h4 id="email" >agnieszka.m.koziol@gmail.com</h4>
-                <h4>606 34 18 99</h4>
+                <h4>Agnieszka Kozioł</h4>
+                <h6   >
+                    <i class="far fa-envelope"></i>
+                    <a id="email" href="mailto:agnieszka.m.koziol@gmail.com">
+                        agnieszka.m.koziol@gmail.com
+                    </a>
+                </h6>
+                <h5><i class="fas fa-phone"></i> 606 34 18 99</h5>
                 <hr/>
-                <h4>Skrzyszów 332B</h4>
-                <h4>33-156 Skrzyszów</h4>
-                <h4>Pn.-Pt. 9-16</h4>
+                <h5><i class="fas fa-location-arrow"></i> Skrzyszów 332B</h5>
+                <h5>33-156 Skrzyszów</h5>
+                <h5>Pn.-Pt. 9-16</h5>
             </div>
             <div class="col-12 col-md-8">
                 <form>
-                    <div class="form-group">
-                        <label for="exampleFormControlInput1">Email</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlSelect1">Temat</label>
-                        <select class="form-control" id="exampleFormControlSelect1">
-                            <option>Prośba o kontakt</option>
-                            <option>Zapytanie</option>
-                            <option>Praca</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlTextarea1">Example textarea</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    </div>
+                    <fieldset>
+                        <legend><h2>Zadaj mi pytanie</h2></legend>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput">Imię i nazwisko</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Email</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Temat</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>Prośba o kontakt</option>
+                                <option>Zapytanie</option>
+                                <option>Praca</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Wiadomość</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </fieldset>
                 </form>
             </div>
         </div>
     </section>
     <footer>
-
+        <nav class="container">
+            <div class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-text" href="#">Copyright 2018 | All Rights Reserved</a>
+                <div class="" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav  ">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="https://www.facebook.com/profile.php?id=1676046791"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="https://www.instagram.com/?hl=pl"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="https://www.linkedin.com/in/agnieszka-kozio%C5%82-49539583/"><i class="fab fa-linkedin"></i></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a target="_blank" class="nav-link" href="mailto:agnieszka.m.koziol@gmail.com"><i class="far fa-envelope"></i></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </footer>
 
 
@@ -204,5 +230,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="app.min.js"></script>
+
 </body>
 </html>
