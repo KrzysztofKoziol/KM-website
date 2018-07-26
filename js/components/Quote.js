@@ -18,7 +18,7 @@ import React, {Component} from "react";
             //             title: response.items[0].volumeInfo.title
             //         })
             //     });
-            fetch('http://api.forismatic.com/api/1.0/?method=getQuote&format=json&lang=en', {
+            fetch('https://api.forismatic.com/api/1.0/?method=getQuote&format=json&lang=en', {
                 method: 'post',
                 headers: {'Content-Type':'application/json'}
             }).then((response)=>{
