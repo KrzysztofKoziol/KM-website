@@ -20,7 +20,7 @@ import React, {Component} from "react";
             //     });
             fetch('https://api.forismatic.com/api/1.0/?method=getQuote&format=json&lang=en', {
                 method: 'post',
-                headers: {'Content-Type':'application/json'}
+                headers: {'Content-Type':'application/json'}, mode: 'no-cors'
             }).then((response)=>{
                 //w response będą twoje dane
                 console.log(response);
