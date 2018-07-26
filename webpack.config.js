@@ -23,6 +23,10 @@ module.exports = {
             loader: 'html-loader'
         },
             {
+                test: /\.css$/,
+                use: [ 'style-loader', 'css-loader' ]
+            },
+            {
                 test: /\.(otf|eot|woff2|woff|ttf|svg)$/,
                 loader: "file-loader"
             },
@@ -49,29 +53,20 @@ module.exports = {
                     plugins: ['react-html-attrs', 'transform-class-properties', 'transform-decorators-legacy']
                 }
             }, {
-                test: /\.(scss)$/,
-                use: [{
-                    loader: 'style-loader', // inject CSS to page
-                }, {
-                    loader: 'css-loader', // translates CSS into CommonJS modules
-                }, {
-                    loader: 'postcss-loader', // Run post css actions
-                    options: {
-                        plugins: function () { // post css plugins, can be exported to postcss.config.js
-                            return [
-                                require('precss'),
-                                require('autoprefixer')
-                            ];
-                        }
-                    }
-                }, {
-                    loader: 'sass-loader' // compiles Sass to CSS
-                }]
+                test: /\.scss$/,
+                loader: ExtractTextPlugin.extract({
+                    fallbackLoader: 'style-loader',
+                    loader: [{
+                        loader: 'css-loader'
+                    }, {
+                        loader: 'sass-loader'
+                    }]
+                })
             }
         ]
     },
     output: {
-        path: path.join(__dirname, "./dist"),
+        path: path.join(__dirname, "public"),
         filename: "app.min.js"
     },
     plugins: [
