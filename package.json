@@ -23,6 +23,7 @@
     "css-loader": "^0.28.7",
     "extract-text-webpack-plugin": "^2.1.2",
     "file-loader": "^1.1.6",
+    "harp": "^0.25.0",
     "jquery": "^3.3.1",
     "node-sass": "^4.9.1",
     "npm": "^6.1.0",
