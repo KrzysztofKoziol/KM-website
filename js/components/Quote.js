@@ -19,7 +19,7 @@ import React, {Component} from "react";
             //         })
             //     });
             fetch('https://quotes.rest/qod.json?category=inspire ', {
-                method: 'POST',
+                method: 'GET',
                 headers: {'Content-Type':'application/json'},
                 mode: 'no-cors'
             }).then((response)=>{
