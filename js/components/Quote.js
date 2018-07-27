@@ -1,11 +1,13 @@
 import React, {Component} from "react";
+import axios from 'axios';
 
     class Quote extends React.Component {
         constructor(props) {
             super(props);
             this.state = {
                 isReady: false,
-                quote: null,
+                quote: "",
+                author: ""
             }
         }
 
@@ -18,26 +20,54 @@ import React, {Component} from "react";
             //             title: response.items[0].volumeInfo.title
             //         })
             //     });
-            fetch('https://quotes.rest/qod.json?category=inspire ', {
-                method: 'GET',
-                headers: {'Content-Type':'application/json'},
-                mode: 'no-cors'
-            }).then((response)=>{
-                //w response będą twoje dane
-                console.log(response);
-                this.setState({
-                    quote: response
+
+        //     fetch('https://quotes.rest/qod.json?category=inspire', {
+        //         method: 'POST',
+        //         headers: {'Content-Type':'application/json'},
+        //         mode: 'no-cors'
+        //     }).then((response)=>{
+        //
+        //         //w response będą twoje dane
+        //         console.log(response);
+        //         this.setState({
+        //             quote: response
+        //         })
+        //     });
+        //         axios.get('http://quotes.rest/qod.json?category=inspire', {
+        //             headers: {
+        //                 'Content-Type': 'application/json'
+        //             },
+        //             crossDomain: true
+        //         })
+        //             .then(function (response) {
+        //                 console.log(response);
+        //                 console.log(response.data.contents.quotes[0].quote);
+        //             });
+
+                axios.get('https://talaikis.com/api/quotes/random/', {
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    crossDomain: true
                 })
-            });
-        }
+                    .then((response) => {
+                        console.log(response);
+                        this.setState({
+                            quote: response.data.quote,
+                            author:response.data.author,
+
+                        });
+                    })
+
+         }
 
         render() {
             // if (!this.state.isReady) {
             //     return <div>loading</div>;
             // }
             return <span>
-                <h4>{ this.state.quote && this.state.quote.contents.quotes.quote }</h4>
-                <h6>{ this.state.quote && this.state.quote.quoteAuthor }</h6>
+                <h3><i>{ this.state.quote }</i></h3>
+                <h6>{ this.state.author }</h6>
                 </span>;
         }
 

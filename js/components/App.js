@@ -1,7 +1,6 @@
 import React, {Component} from "react";
 import Header from "./Header";
 import Footer from "./Footer";
-import Quote from "./Quote";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./Home";
 import PrivacyPolicy from "./PrivacyPolicy";
@@ -17,9 +16,8 @@ class App extends Component {
                             <Route path='/policy' component={PrivacyPolicy} />
                         </Switch>
                         <Footer/>
-                        <Quote/>
                     </div>
-        </Router>;
+                </Router>;
     }
 }
 

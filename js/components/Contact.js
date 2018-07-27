@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import {Link} from 'react-router-dom';
 
 // const errorStyle = {
 //     color: red
@@ -12,6 +13,7 @@ class Contact extends Component {
             email: '',
             topic: 'contactRequest',
             message: '',
+            isChecked: false,
             errors:{
                 name:"",
                 email:"",
@@ -44,6 +46,12 @@ class Contact extends Component {
         })
     };
 
+    handleCheckbox = (event) => {
+
+        this.setState({
+            isChecked: !this.state.isChecked
+        })
+    };
 
     handleSubmit = (event) => {
         event.preventDefault();
@@ -165,13 +173,23 @@ class Contact extends Component {
                                         value={this.state.message}
                                         onChange={this.handleMessageChange.bind(this)}
                                         required>
-                                            </textarea>
+                                    </textarea>
                                 </div>
+                                <div className="form-group form-check">
+                                    <input type="checkbox" className="form-check-input" id="exampleCheck1" checked={this.state.isChecked} onChange={this.handleCheckbox.bind(this)}/>
+                                        <label className="form-check-label" htmlFor="exampleCheck1">
+                                            Akceptuję{' '}
+                                            <Link to='/policy' className="navbar-text"> Politykę prywatnosci</Link>
+                                        </label>
+
+                                </div>
+
                                 <button
                                     type="submit"
-                                    className="btn btn-primary"
+                                    className="btn btn-dark"
                                     value={"Submit"}
-                                    onClick={ (e) => { this.handleSubmit(e); }}>
+                                    onClick={ (e) => { this.handleSubmit(e); }}
+                                    disabled={!this.state.isChecked} >
                                     Submit
                                 </button>
                             </fieldset>
