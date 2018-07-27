@@ -5,7 +5,7 @@ import React, {Component} from "react";
             super(props);
             this.state = {
                 isReady: false,
-                title: null,
+                quote: null,
             }
         }
 
@@ -20,7 +20,8 @@ import React, {Component} from "react";
             //     });
             fetch('https://api.forismatic.com/api/1.0/?method=getQuote&format=json&lang=en', {
                 method: 'post',
-                headers: {'Content-Type':'application/json'}, mode: 'no-cors'
+                headers: {'Content-Type':'application/json'},
+                mode: 'no-cors'
             }).then((response)=>{
                 //w response będą twoje dane
                 console.log(response);
@@ -31,9 +32,9 @@ import React, {Component} from "react";
         }
 
         render() {
-            if (!this.state.isReady) {
-                return <div>loading</div>;
-            }
+            // if (!this.state.isReady) {
+            //     return <div>loading</div>;
+            // }
             return <span>
                 <h4>{ this.state.quote && this.state.quote.quoteText }</h4>
                 <h6>{ this.state.quote && this.state.quote.quoteAuthor }</h6>
