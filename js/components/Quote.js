@@ -18,7 +18,7 @@ import React, {Component} from "react";
             //             title: response.items[0].volumeInfo.title
             //         })
             //     });
-            fetch('http://quotes.rest/qod.json?category=inspire ', {
+            fetch('https://quotes.rest/qod.json?category=inspire ', {
                 method: 'POST',
                 headers: {'Content-Type':'application/json'},
                 mode: 'no-cors'
