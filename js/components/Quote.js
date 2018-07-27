@@ -18,8 +18,8 @@ import React, {Component} from "react";
             //             title: response.items[0].volumeInfo.title
             //         })
             //     });
-            fetch('https://api.forismatic.com/api/1.0/?method=getQuote&format=json&lang=en', {
-                method: 'post',
+            fetch('http://quotes.rest/qod.json?category=inspire ', {
+                method: 'POST',
                 headers: {'Content-Type':'application/json'},
                 mode: 'no-cors'
             }).then((response)=>{
@@ -36,7 +36,7 @@ import React, {Component} from "react";
             //     return <div>loading</div>;
             // }
             return <span>
-                <h4>{ this.state.quote && this.state.quote.quoteText }</h4>
+                <h4>{ this.state.quote && this.state.quote.contents.quotes.quote }</h4>
                 <h6>{ this.state.quote && this.state.quote.quoteAuthor }</h6>
                 </span>;
         }
