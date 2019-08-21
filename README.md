@@ -1,9 +1,9 @@
-# Agnieszka-Kozioł-Homepage
+# Kasia-Motyl-Homepage
 
-My wife's website. She's a coach and job advisor.
+
 
 <h3>General info</h3>
-<h5>It is my first project. It is a website of coach Agnieszka Kozioł</h5>
+<h5>It is my second project. It is a website of designer Kasia Motyl</h5>
 
 <h3>Technologies</h3>
 <h5>Bootstrap library, Responsive web design (RWD) technique, REST API in REACT components</h5>

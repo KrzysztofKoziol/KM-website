@@ -12,11 +12,11 @@ class Carousel extends Component {
                 </ol>
                 <div className="carousel-inner">
                     <div className="carousel-item active">
-                        <img className="d-block w-100" src="images/adult-blur-brainstorming-401684.jpg" alt="First slide"/>
+                        <img className="d-block w-100" src="images/main-pic1.jpg" alt="First slide"/>
                             <div className="carousel-caption d-none d-md-block">
-                                <h1><strong>Agnieszka Kozioł</strong></h1>
-                                <h2>Coaching</h2>
-                                <h2>Doradztwo zawodowe</h2>
+                                <h1><strong>Kasia Motyl</strong></h1>
+                                <h2>Koordynatorka prac</h2>
+                                <h2>wykończeniowych </h2>
                             </div>
                     </div>
                     <div className="carousel-item">

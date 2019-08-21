@@ -29,7 +29,7 @@ class Header extends Component {
         return <header>
             <nav className="container">
                 <div className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-                    <a className="navbar-brand" href="#">Agnieszka Kozioł</a>
+                    <a className="navbar-brand" href="#">Kasia Motyl</a>
                     <button onClick={this.onHamburgerClick.bind(this)} className="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
                             aria-label="Toggle navigation">

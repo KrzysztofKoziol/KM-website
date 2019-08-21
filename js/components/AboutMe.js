@@ -9,12 +9,13 @@ class AboutMe extends Component {
                     <div className="col-12 col-md-6">
                         <h2>O mnie</h2>
                         <p>
-                            Cupcake caramels chocolate bar sweet muffin dessert bonbon cheesecake. Chupa chups bonbon
-                            caramels chupa chups. Pie caramels apple pie. Jujubes biscuit topping I love dragée dessert
-                            bonbon marshmallow. Macaroon cake pudding. Chocolate I love I love I love gummi bears cookie
-                            candy canes cookie tootsie roll. Powder jelly dragée powder I love chocolate candy canes
-                            chocolate cake jelly. Gingerbread soufflé topping powder cupcake. Icing sweet roll pastry
-                            sugar plum. Wafer gingerbread ice cream.
+                            Odbiór kluczy do nowego domu to świetne uczucie. Ekscytacja i ulga szybko mogą jednak zostać odsunięte przez ogromne wyzwanie, jakim jest urządzenie wnętrza. Może masz pomysł, ale brakuje Ci czasu, by wcielić go w życie? Potrzebujesz KOGOŚ kto pomoże przy projektowaniu i dopilnuje jego realizacji!
+                        </p>
+                        <p>
+                            Jestem Kasia Motyl, zajmuję się projektowaniem  i wdrażaniem  projektów w życie. Koordynuję prace ekipy wykończeniowej. Dbam o to, by wybrane blaty były przycięte i położone równo, odpowiednia ilość płytek trafiła w ręce fachowców, a lampy tworzyły przytulną atmosferę.
+                        </p>
+                        <p>
+                            Gwarantuje spokojną głowę, oszczędność czasu i pieniędzy!
                         </p>
                     </div>
                     <div className="col-12 col-md-6 ">

@@ -100,18 +100,18 @@ class Contact extends Component {
                 <hr/>
                 <div className="row">
                     <div className="col-12 col-md-4">
-                        <h4>Agnieszka Kozioł</h4>
+                        <h4>Kasia Motyl</h4>
                         <h6>
                             <i className="far fa-envelope"/>
                             <a id="email" href="mailto:agnieszka.m.koziol@gmail.com">
-                                agnieszka.m.koziol@gmail.com
+                                katarzyna.motyl@gmail.com
                             </a>
                         </h6>
-                        <h5><i className="fas fa-phone"/> 606 34 18 99</h5>
+                        <h5><i className="fas fa-phone"/> 501 556 160</h5>
                         <hr/>
-                        <h5><i className="fas fa-location-arrow"/> Skrzyszów 332B</h5>
+                        {/* <h5><i className="fas fa-location-arrow"/> Skrzyszów 332B</h5>
                         <h5>33-156 Skrzyszów</h5>
-                        <h5>Pn.-Pt. 9-16</h5>
+                        <h5>Pn.-Pt. 9-16</h5> */}
                     </div>
                     <div className="col-12 col-md-8">
                         <form>
