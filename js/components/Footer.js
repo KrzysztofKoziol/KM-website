@@ -7,7 +7,7 @@ class Footer extends Component {
                 <nav className="container">
                     <div className="navbar navbar-expand-lg navbar-dark bg-dark justify-content-between">
                         <a className="navbar-text" href="#">Copyright 2019 | All Rights Reserved</a>
-                        <Link to='/policy' className="navbar-text">Polityka prywatnosci</Link>
+                        {/* <Link to='/policy' className="navbar-text">Polityka prywatnosci</Link> */}
                         <div className="" id="navbarTogglerDemo02">
                             <ul className="navbar-nav  flex-row-reverse ">
                                 <li className="nav-item active">

@@ -42,7 +42,7 @@ class Header extends Component {
                                     className="sr-only">(current)</span></a>
                             </li>
                             <li className="nav-item">
-                                <a onClick={this.hideMenu.bind(this)} className="nav-link" href="/#offer">Oferta</a>
+                                <a onClick={this.hideMenu.bind(this)} className="nav-link" href="/#offer">Rzeczy, które mogę zrobić</a>
                             </li>
                             <li className="nav-item">
                                 <a onClick={this.hideMenu.bind(this)} className="nav-link" href="/#contact">Kontakt</a>

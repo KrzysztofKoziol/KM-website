@@ -3,8 +3,51 @@ import React, {Component} from "react";
 class Offer extends Component {
     render(){
         return <div>
+            
+
             <div id="offer"></div>
             <section className="container">
+                <div>
+                    <ul className="feature-icons">
+                        <li className="icon">
+                            <i className="fas fa-user-friends"/>
+                            Konsultacje z klientem
+                        </li>
+                        <li>
+                            Tablice inspiracji
+                        </li>
+                        <li>
+                            Zestawienie materiałów
+                        </li>
+                        <li>
+                            Dobór mebli
+                        </li>
+                        <li>
+                            Dobór oświetlenia
+                        </li>
+                        <li>
+                            Dobór sprzętów AGD i wyposażenia łazienki
+                        </li>
+                        <li>
+                            Przygotowanie zamówień i wycen
+                        </li>
+                        <li>
+                            Zakupy
+                        </li>
+                        <li>
+                            Wizyty na budowie
+                        </li>
+                        <li>
+                            Koordynacja prac wykończeniowych
+                        </li>
+                        <li>
+                            Sprzątanie końcowe
+                        </li>
+                        <li>
+                            Pomoc przy wynajmie nieruchomości
+                        </li>
+                    </ul>
+                </div>
                 <div className="accordion bg-dark" id="accordionExample">
                     <div className="card">
                         <div className="card-header bg-dark" id="headingOne">

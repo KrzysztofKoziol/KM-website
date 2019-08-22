@@ -13,6 +13,7 @@ body {
   font-family: $font-stack;
   .about-me {
     padding: 15px;
+    color: $secondaryColor;
     h2 {
       color: $primaryColor;
     }
@@ -26,6 +27,14 @@ body {
 
     }
   }
+  .feature-icons {
+    list-style: none;
+    list-style-type: none;
+    .icon {
+      list-style: none;
+      text-decoration: none;
+    }
+  } 
   hr {
     color: $primaryColor;
     height: 5px;

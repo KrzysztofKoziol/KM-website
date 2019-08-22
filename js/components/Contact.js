@@ -103,7 +103,7 @@ class Contact extends Component {
                         <h4>Kasia Motyl</h4>
                         <h6>
                             <i className="far fa-envelope"/>
-                            <a id="email" href="mailto:agnieszka.m.koziol@gmail.com">
+                            <a id="email" href="mailto:katarzyna.motyl@gmail.com">
                                 katarzyna.motyl@gmail.com
                             </a>
                         </h6>
