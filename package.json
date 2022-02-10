@@ -26,7 +26,7 @@
     "file-loader": "^1.1.6",
     "harp": "^0.25.0",
     "jquery": "^3.3.1",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "npm": "^6.1.0",
     "popper": "^1.0.1",
     "postcss-loader": "^2.1.6",
